@@ -5,7 +5,7 @@ export const useAppStore = defineStore('app', {
     user: {
       id: 'user-' + Math.random().toString(36).substr(2, 9),
       signInCount: 0,
-      lastSignIn: null
+      lastSignIn: null as Date | null
     },
     mockVegetables: [
       { id: 'v1', name: '空心菜', farm: '阿明農場', status: '有庫存', story: '這是在新化社大農場種植的...' },
